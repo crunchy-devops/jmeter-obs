@@ -22,12 +22,12 @@ Crtl-c  # exit
 ## Clone the repo  on the VM
 ```shell
 cd   # you should be on your home directory
-git clone  https://github.com/crunchy-devops/edb-assessment.git
+git clone  https://github.com/crunchy-devops/jmeter-obs.git
 ```
 
 ## Install a virtualenv
 ```shell
-cd edb-assessment
+cd jmeter-obs
 python3 -m venv venv  # set up the module venv in the directory venv
 source venv/bin/activate  # activate the virtualenv python
 pip3 install wheel  # set for permissions purpose
@@ -38,11 +38,12 @@ pip3 install wheel  # set for permissions purpose
 pip3 install ansible # install ansible
 pip3 install requests # extra packages
 ansible --version # check the version number # should be the latest 2.11.5
+cd docker-ubuntu
 ansible-playbook -i inventory install_docker_ubuntu.yml --limit local  # run the playbook for installing docker
 docker version  # check 
 # close your IDE and start again for all changes take effect
 cd
-cd edb-assessment
+cd jmeter-obs
 source venv/bin/activate
 docker ps # Your normal user should be able to start docker  
 ```
