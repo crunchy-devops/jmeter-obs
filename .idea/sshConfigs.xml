@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:30}" host="170.75.161.30" id="776b7de3-6a1b-428c-9e2b-abac532bfec4" port="22" customName="teacher" nameFormat="CUSTOM" username="ubuntu" useOpenSSHConfig="true">
+        <option name="customName" value="teacher" />
+      </sshConfig>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:30}" host="170.75.173.181" id="c54e5c02-e689-4911-a52a-34ce762d90bf" port="22" customName="luna" nameFormat="CUSTOM" username="ubuntu" useOpenSSHConfig="true">
+        <option name="customName" value="luna" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>

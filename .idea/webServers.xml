@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="fc66b594-045c-480a-8128-678fded7d3af" name="teacher">
+        <fileTransfer accessType="SFTP" host="170.75.161.30" port="22" sshConfigId="776b7de3-6a1b-428c-9e2b-abac532bfec4" sshConfig="teacher">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="30000" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="30feb459-ef3b-4ac0-9ade-3591144421ce" name="luna">
+        <fileTransfer accessType="SFTP" host="170.75.173.181" port="22" sshConfigId="c54e5c02-e689-4911-a52a-34ce762d90bf" sshConfig="luna">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="30000" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
