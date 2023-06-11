@@ -85,7 +85,7 @@
             <hashTree/>
             <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor" enabled="true">
               <stringProp name="XPathExtractor.default"></stringProp>
-              <stringProp name="XPathExtractor.refname">${CSRF_TOKEN}</stringProp>
+              <stringProp name="XPathExtractor.refname">CSRF_TOKEN</stringProp>
               <stringProp name="XPathExtractor.matchNumber">1</stringProp>
               <stringProp name="XPathExtractor.xpathQuery">//input[@name=&apos;csrfmiddlewaretoken&apos;]/@value</stringProp>
               <boolProp name="XPathExtractor.validate">false</boolProp>
@@ -375,6 +375,16 @@ try {
               </collectionProp>
             </HeaderManager>
             <hashTree/>
+            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor" enabled="true">
+              <stringProp name="XPathExtractor.default"></stringProp>
+              <stringProp name="XPathExtractor.refname">CSRF_TOKEN</stringProp>
+              <stringProp name="XPathExtractor.matchNumber">1</stringProp>
+              <stringProp name="XPathExtractor.xpathQuery">//input[@name=&apos;csrfmiddlewaretoken&apos;]/@value</stringProp>
+              <boolProp name="XPathExtractor.validate">false</boolProp>
+              <boolProp name="XPathExtractor.tolerant">true</boolProp>
+              <boolProp name="XPathExtractor.namespace">false</boolProp>
+            </XPathExtractor>
+            <hashTree/>
           </hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/admin/jsi18n/-968" enabled="true">
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
@@ -434,7 +444,7 @@ try {
                 <elementProp name="csrfmiddlewaretoken" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">csrfmiddlewaretoken</stringProp>
-                  <stringProp name="Argument.value">M1nPhO5h5DzhZnkEl9RMigAxfr5E7vLzyXcxG4hC9cInV8DFO6Rj9hVz7bfVTBKl</stringProp>
+                  <stringProp name="Argument.value">${CSRF_TOKEN}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -448,14 +458,14 @@ try {
                 <elementProp name="pub_date_0" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">pub_date_0</stringProp>
-                  <stringProp name="Argument.value">2023-06-10</stringProp>
+                  <stringProp name="Argument.value">2023-06-11</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
                 <elementProp name="pub_date_1" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">pub_date_1</stringProp>
-                  <stringProp name="Argument.value">15:57:41</stringProp>
+                  <stringProp name="Argument.value">5:57:41</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
