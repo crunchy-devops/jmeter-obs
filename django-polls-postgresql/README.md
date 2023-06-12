@@ -51,6 +51,13 @@ Select the file to load in the directory data the table polls_question
 Do the same with postgres_public_polls_choice.csv 
 
 
-## JMEter 
+## Jmeter 
 Recorder
 .*\.(txt|bmp|css|js|gif|ico|jpe?g|png|swf|woff|woff2|ttf|svg|firefox.com).*
+
+
+## Plugins manager 
+Download
+https://jmeter-plugins.org/get/  
+
+add dummy sampler
