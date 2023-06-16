@@ -23,6 +23,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="6d74fe65-c04b-473d-9a93-a7eabac1568a" name="instructor">
+        <fileTransfer accessType="SFTP" host="170.75.175.61" port="22" sshConfigId="67d86913-248e-42d5-9143-719d67ad7f08" sshConfig="instructor">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="30000" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>
