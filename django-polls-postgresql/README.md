@@ -54,7 +54,7 @@ Do the same with postgres_public_polls_choice.csv
 ## Jmeter 
 Recorder
 .*\.(txt|bmp|css|js|gif|ico|jpe?g|png|swf|woff|woff2|ttf|svg|firefox.com).*
-
+.*\.(txt|bmp|css|js|gif|ico|jpe?g|png|swf|woff|woff2|ttf|svg).*
 
 ## Plugins manager 
 Download
