@@ -8,6 +8,9 @@
       <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:30}" host="170.75.173.181" id="c54e5c02-e689-4911-a52a-34ce762d90bf" port="22" customName="luna" nameFormat="CUSTOM" username="ubuntu" useOpenSSHConfig="true">
         <option name="customName" value="luna" />
       </sshConfig>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:30}" host="170.75.160.237" id="2dd11ac7-4bc5-4fc6-870a-10de36165cb4" port="22" customName="obs" nameFormat="CUSTOM" username="ubuntu" useOpenSSHConfig="true">
+        <option name="customName" value="obs" />
+      </sshConfig>
     </configs>
   </component>
 </project>

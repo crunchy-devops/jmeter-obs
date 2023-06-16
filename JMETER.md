@@ -1,5 +1,52 @@
 # Lab Jmeter 
 
+## Configure Jmeter
+### Plugins manager
+Download  
+https://jmeter-plugins.org/get/  
+this file jmeter-plugins-manager-1.9.jar should be installed under jmeter directory /lib/ext
+Restart Jmeter  
+Go to Option -> Plugin manager    
+Tab Available Plugins
+Tick 3 Basic Graphs
+Hit Apply Changes ad Restart Jmeter
+
+## First test plan 
+Put your mouse cursor on Test plan , right click     
+Select Add -> Thread ( users) -> Thread Group  
+Put your mouse cursor on Thread Group , right click     
+Select Add -> Sampler -> Http Request  
+Change the Name to **LandingPage**   
+Protocol : https   
+Servername: fr.wikipedia.org  
+Path: /wiki/Métro_de_Paris  
+Content encoding: UTF-8  
+Put your mouse cursor on Thread Group , right click  
+Select Add -> Sampler -> Http Request  
+Change the Name to **Modify**   
+Protocol : https   
+Servername: fr.wikipedia.org  
+Path: /w/index.php?title=Métro_de_Paris&veaction=edit  
+Content encoding: UTF-8
+Put your mouse cursor on Thread Group , right click  
+Select Add -> Sampler -> Http Request  
+Change the Name to **Modify**   
+Protocol : https   
+Servername: fr.wikipedia.org  
+Path: /w/index.php?title=Métro_de_Paris&veaction=history    
+Content encoding: UTF-8  
+Put your mouse cursor on Thread Group , right click
+Select Add -> Listener -> View Result Tree
+Go To
+
+
+
+## Duration and size assertions
+## Reponse assertions
+## XML and Schema assertions
+## HTML assertion
+## XPath and JSON assertions
+## JSR223 assertion
 
 
 

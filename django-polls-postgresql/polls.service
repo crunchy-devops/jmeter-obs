@@ -1,0 +1,14 @@
+[Unit]
+Description=polls application
+After=network.target
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=ubuntu
+WorkingDirectory=/home/ubuntu/jmeter-obs/django-polls-postgresql
+ExecStart=/home/ubuntu/jmeter-obs/venv/bin/python3 manage.py runserver 0:8000
+
+[Install]
+WantedBy=multi-user.target

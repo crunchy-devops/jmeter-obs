@@ -9,6 +9,13 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="obs">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/ubuntu/jmeter-obs" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="teacher">
         <serverdata>
           <mappings>
