@@ -1,0 +1,46 @@
+version: '3.3'
+
+volumes:
+  jmeter_dir:
+  jenkins-home:
+  #elasticsearch:
+  #liquibase_dir:
+
+networks:
+  prodnetwork:
+    driver: bridge
+
+services:
+ jenkins:
+  hostname: jenkins
+  ##image: bitnami/jenkins
+  #image: systemdevformations/jenkins-sonar:v3
+  build: ./jenkins-build
+  ports:
+    - "32500:8080"
+    - "32501:50000"
+  networks:
+    - prodnetwork
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    - /usr/bin/docker:/usr/bin/docker
+    - jenkins-home:/bitnami/jenkins
+    - jmeter_dir:/jmeter
+  depends_on:
+    - jmeter
+  environment:
+    - JENKINS_PASSWORD=password
+    - NEXUS_PORT=8081
+    - SONAR_PORT=9000
+    - SONAR_DB_PORT=5432
+ jmeter:
+   hostname: jmeter
+   build: ./jmeter
+   command: tail -f /dev/null
+   networks:
+     - prodnetwork
+   volumes:
+     - jmeter_dir:/jmeter
+     - /opt/jmeter/results:/results
+     - /opt/jmeter/scripts:/scripts
+

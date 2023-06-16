@@ -37,9 +37,12 @@ Path: /w/index.php?title=Métro_de_Paris&veaction=history
 Content encoding: UTF-8  
 Put your mouse cursor on Thread Group , right click
 Select Add -> Listener -> View Result Tree
-Go To
-
-
+Put your mouse cursor on Thread Group , right click
+Select Add -> Listener -> jp@gc - Active Threads Over Time
+Put your mouse cursor on Thread Group , right click
+Select Add -> Listener -> jp@gc - Response Times Over Time
+Put your mouse cursor on Thread Group , right click
+Select Add -> Listener -> jp@gc - Transactions per Second
 
 ## Duration and size assertions
 ## Reponse assertions
