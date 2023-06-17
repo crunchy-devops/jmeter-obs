@@ -41,7 +41,7 @@
             <stringProp name="Argument.name">PASSWORD</stringProp>
             <stringProp name="Argument.value">${__env(POLLS_PASSWD,,)}</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
-            <stringProp name="Argument.desc">Get password from user windows</stringProp>
+            <stringProp name="Argument.desc">Get password from a user windows</stringProp>
           </elementProp>
         </collectionProp>
       </Arguments>
@@ -233,7 +233,7 @@
                 <elementProp name="password" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">false</boolProp>
                   <stringProp name="Argument.name">password</stringProp>
-                  <stringProp name="Argument.value">${PASSWORD}</stringProp>
+                  <stringProp name="Argument.value">12345678</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -502,7 +502,7 @@ try {
             <stringProp name="LoopController.loops">6</stringProp>
           </LoopController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Polss-Add-Post" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Polls-Add-Post" enabled="true">
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="csrfmiddlewaretoken" elementType="HTTPArgument">

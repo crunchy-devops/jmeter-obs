@@ -27,6 +27,14 @@ RUN apk update \
 	&& mv apache-jmeter-${JMETER_VERSION} jmeter \
 	&& rm jmeter.tgz
 
+RUN cd ${JMETER_HOME}/lib/ext && \
+    wget https://repo1.maven.org/maven2/kg/apc/jmeter-plugins-manager/1.9/jmeter-plugins-manager-1.9.jar && \
+    cd ${JMETER_HOME}/lib && \
+    curl -O https://repo1.maven.org/maven2/kg/apc/cmdrunner/2.3/cmdrunner-2.3.jar
+
+RUN  java -cp ${JMETER_HOME}/lib/ext/jmeter-plugins-manager-1.9.jar org.jmeterplugins.repository.PluginManagerCMDInstaller
+RUN  ${JMETER_HOME}/bin/PluginsManagerCMD.sh install-all-except
+
 
 # TODO: plugins (later)
 # && unzip -oq "/tmp/dependencies/JMeterPlugins-*.zip" -d $JMETER_HOME
